@@ -1,23 +1,9 @@
-<div id="player"></div>
-<script
-  crossorigin
-  src="https://unpkg.com/griffith-standalone/dist/index.umd.min.js"
-></script>
-<script>
-  const target = document.getElementById('player')
-
-  const sources = {
-    sd: {
-      play_url: 'https://cdn-21.anonfiles.com/T2I91251o3/93ce88a8-1591591173/Exponiendo%20a%20la%20Federaci%C3%B3n%20Gal%C3%A1ctica%20-%20Raza%20Taygeteana%20de%20las%20Pleyades-rwBygte593Y.mp4',
-    },
-  }
-
-  // create player instance
-  const player = Griffith.createPlayer(target)
-
-  // load video
-  player.render({sources})
-
-  // dispose video
-  player.dispose()
-</script>
+<head>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+</head>
+<body>
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({source: "https://cdn-21.anonfiles.com/T2I91251o3/93ce88a8-1591591173/Exponiendo%20a%20la%20Federaci%C3%B3n%20Gal%C3%A1ctica%20-%20Raza%20Taygeteana%20de%20las%20Pleyades-rwBygte593Y.mp4", parentId: "#player"});
+  </script>
+</body>
